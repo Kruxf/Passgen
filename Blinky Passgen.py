@@ -1,5 +1,11 @@
 import RPi.GPIO as GPIO
 import time
+import random
+
+while True
+
+    a = 'abcd'
+    n = '1234'
 
 ledPin = 11    # RPI Board pin11
 
@@ -11,7 +17,7 @@ def setup():
 
 def loop():
 	while True:
-		GPIO.output(ledPin, GPIO.HIGH)  # led on
+		GPIO.output(ledPin, GPIO.HIGH)  # Password created
 		print ('...led on')
 		time.sleep(1)
 		GPIO.output(ledPin, GPIO.LOW) # led off
@@ -28,4 +34,3 @@ if __name__ == '__main__':     # Program start from here
 		loop()
 	except KeyboardInterrupt:  # When 'Ctrl+C' is pressed, the child program destroy() will be  executed.
 		destroy()
-
